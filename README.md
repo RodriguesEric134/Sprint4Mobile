@@ -1,11 +1,11 @@
-# 📱 Sprint 3 - Mobile
+# 📱 Sprint 4 - Mobile
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.74-blue?logo=react)](https://reactnative.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Expo](https://img.shields.io/badge/Expo-managed%20workflow-black?logo=expo)](https://expo.dev/)
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)](#)
 
-Aplicativo mobile desenvolvido como parte da **Sprint 3**.  
+Aplicativo mobile desenvolvido como parte da **Sprint 4**.  
 O projeto foi feito com **React Native + TypeScript** e possui fluxo completo de autenticação, registro, listagem e edição de usuários, utilizando `AsyncStorage` como persistência local.
 
 ---
@@ -76,7 +76,7 @@ AppNome/
 
 ▶️ Como rodar o projeto
 1. Clonar o repositório
-git clone https://github.com/RodriguesEric134/Sprint3Mobile.git
+git clone https://github.com/RodriguesEric134/Sprint4Mobile.git
 2. Entrar no diretório do projeto com
 ```bash
 cd AppNome
