@@ -31,39 +31,45 @@ O projeto foi feito com **React Native + TypeScript** e possui fluxo completo de
 
 ```bash
 AppNome/
-├── app/                     # (futuro uso com expo-router)
+├── app.tsx                       # Ponto de entrada (reexporta src/app.tsx)
 ├── src/
-│   ├── screens/             # Telas do app
+│   ├── app.tsx                   # Estrutura principal do app
+│   ├── screens/                  # Telas principais
 │   │   ├── LoginScreen.tsx
 │   │   ├── RegisterScreen.tsx
 │   │   ├── ProfileScreen.tsx
 │   │   ├── UsersListScreen.tsx
 │   │   └── EditUserScreen.tsx
-│   ├── components/          # Componentes reutilizáveis
+│   ├── components/               # Componentes reutilizáveis
 │   │   ├── Button.tsx
 │   │   ├── Card.tsx
 │   │   ├── Input.tsx
 │   │   ├── H1.tsx
-│   │   └── AppHeader.tsx
-│   ├── layout/              # Estrutura de tela
-│   │   └── Screen.tsx
-│   ├── services/            # Regras de negócio / acesso a dados
-│   │   ├── storage/
-│   │   │   └── asyncStorage.ts
-│   │   ├── repositories/
-│   │   │   └── userRepository.ts
-│   │   └── sessionService.ts
-│   ├── utils/               # Funções utilitárias
-│   │   ├── id.ts
-│   │   └── validations.ts
-│   ├── theme/               # Estilos e cores globais
-│   │   └── tokens.ts
-│   ├── types/               # Definições de tipos
-│   │   └── user.ts
-│   ├── navigation/          # Roteador customizado
+│   │   ├── AppHeader.tsx
+│   │   ├── LoadingState.tsx
+│   │   ├── ErrorState.tsx
+│   │   └── EmptyState.tsx
+│   ├── providers/                # Contextos globais
+│   │   └── ToastProvider.tsx
+│   ├── services/                 # Regras de negócio e integração
+│   │   ├── firebase/             # Integração com Firebase
+│   │   │   ├── app.ts
+│   │   │   ├── auth.ts
+│   │   │   └── users.ts
+│   │   ├── sessionService.ts
+│   │   └── storage/
+│   │       └── asyncStorage.ts
+│   ├── navigation/               # Roteamento customizado
 │   │   └── router.tsx
-│   └── app.tsx              # Composição do app (estado de rotas)
-├── App.tsx                  # Reexporta src/app.tsx
+│   ├── layout/                   # Estrutura base de tela
+│   │   └── Screen.tsx
+│   ├── theme/                    # Tokens e estilos globais
+│   │   └── tokens.ts
+│   ├── utils/                    # Funções auxiliares
+│   │   ├── id.ts
+│   │   └── validation.ts
+│   └── types/                    # Tipagens globais
+│       └── user.ts
 └── package.json
 ```
 🛠️ Tecnologias
