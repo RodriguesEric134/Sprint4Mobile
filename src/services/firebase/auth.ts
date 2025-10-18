@@ -6,8 +6,9 @@ import {
   updateProfile,
   sendPasswordResetEmail,
   User,
+  getAuth,
 } from "firebase/auth";
-import { auth } from "./app";
+const auth = getAuth();
 
 export type AuthUser = Pick<User, "uid" | "email" | "displayName" | "photoURL">;
 
